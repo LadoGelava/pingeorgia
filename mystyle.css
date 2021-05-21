@@ -1,0 +1,209 @@
+
+* {
+    margin: 0;
+      padding: 0;
+      text-decoration: none;
+      list-style: none;
+  }
+  
+  *:focus {
+      outline: 0 !important;
+  }
+  
+  body {
+    margin: 0 auto;
+    overflow-x: hidden; 
+    font-family: normal-bold;
+    font-weight: normal;
+  }
+
+/* .heroContent{
+    width: 100%;
+height: calc(100vh - 60px);
+background-image: url("img/heroImgOri.jpg");
+background-color: black;
+background-blend-mode: screen;
+object-fit: cover;
+background-position: center;
+background-repeat: no-repeat;
+z-index: -2;
+} */
+
+header{
+    width: 100%;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Header Mobile */
+.headerMobile .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar{
+    background-color: transparent !important;
+}
+
+.burger{
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 3px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  /* Rotate first bar */
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {
+    opacity: 0;
+  }
+  
+  /* Rotate last bar */
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+  }
+
+  /* header desktop */
+.headerDesktop{
+    display:  none;
+}
+
+.logoDiv{
+    display: flex;
+    justify-content: center;
+    width: 100% !important;
+}
+
+.navbarDesktop{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0px !important;
+    width: 75%;
+    margin: auto;
+}
+
+.navbarDesktopTwo{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbarDesktopTwo a{
+  color: black;
+}
+
+
+.navbar a{
+  font-size: 20px;
+}
+
+.socIcons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.socIcons a{
+    margin-right: 20px;
+}
+
+.socIcons a i{
+    font-size: 22px;
+    color: black;
+}
+
+.fa-facebook:hover{
+    color: blue;
+}
+
+.fa-instagram:hover{
+     color: salmon;
+}
+
+.fa-youtube:hover{
+color: red;
+}
+
+.search {
+    background: none;
+    border-radius: 200px;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    transition: all 0.75s ease-in-out;
+    margin-right: 20px;
+  }
+  .search__text {
+    border: 0;
+    background: transparent;
+    outline: 0;
+    color: white;
+    float: left;
+    line-height: 2.5rem;
+    width: 0;
+    transition: all 0.5s ease-in-out;
+    font-size: 0.8rem;
+  }
+  .search__button {
+    color: lightgreen;
+    background: black;
+    border-radius: 50%;
+    float: right;
+    height: 2.5rem;
+    width: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+  }
+  .search:hover {
+    background: transparent;
+    border: #1e1e1e 1px solid;
+  }
+  .search:hover > .search__text {
+    width: 12.5rem;
+    margin-left: 1rem;
+  }
+  .search:hover > .search__button {
+    transform: scale(0.75);
+  }
+
+.nav-link{
+    color: black !important;
+}
+
+
+/* media queries */
+@media only screen and (min-width: 768px) {
+    .heroContent{
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-image: url("img/heroImgOri.jpg");
+    background-color: black;
+    background-blend-mode: screen;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -2;
+    }
+    .headerMobile{
+        display: none;
+    }
+    .headerDesktop{
+        display: block;
+    }
+}
