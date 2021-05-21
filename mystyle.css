@@ -100,10 +100,19 @@ header{
   margin: auto;
   display: flex;
   justify-content: space-between;
+  padding-top: 20px;
 }
 
 .navbarDesktopTwo a{
-  color: black;
+  color: white;
+  background: black;
+  border-radius: 20px;
+  border: 1px solid black;
+  padding-bottom: 10px;
+}
+
+.navbarDesktopTwo a:hover{
+  color: greenyellow;
 }
 
 
@@ -114,15 +123,24 @@ header{
 .socIcons{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    border-radius: 20px;
+    padding-left: 22px;
 }
 
 .socIcons a{
     margin-right: 20px;
+    color: white;
+}
+
+.calendar:hover{
+  color: greenyellow;
 }
 
 .socIcons a i{
     font-size: 22px;
-    color: black;
+    color: greenyellow;
 }
 
 .fa-facebook:hover{
@@ -156,9 +174,16 @@ color: red;
     width: 0;
     transition: all 0.5s ease-in-out;
     font-size: 0.8rem;
+    font-size: 18px;
   }
+
+  .search__text::placeholder{
+    color: greenyellow;
+    font-size: 18px;
+  }
+  
   .search__button {
-    color: lightgreen;
+    color: greenyellow;
     background: black;
     border-radius: 50%;
     float: right;
@@ -182,9 +207,6 @@ color: red;
     transform: scale(0.75);
   }
 
-.nav-link{
-    color: black !important;
-}
 
 
 /* media queries */
