@@ -1,4 +1,13 @@
 
+@font-face {
+  font-family: bemio;
+  src: url(fonts/Bemio_0.ttf);
+}
+@font-face {
+  font-family: bemioItalic;
+  src: url(fonts/BemioItalic_0.ttf);
+}
+
 * {
     margin: 0;
       padding: 0;
@@ -13,7 +22,7 @@
   body {
     margin: 0 auto;
     overflow-x: hidden; 
-    font-family: normal-bold;
+    font-family: bemio;
     font-weight: normal;
   }
 
@@ -83,16 +92,24 @@ header{
 
 .logoDiv{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     width: 100% !important;
+}
+
+h1{
+ font-size: 22px;
+ margin-top: 22px;
+ color: #abbf0a;
 }
 
 .navbarDesktop{
     display: flex;
-    justify-content: flex-end;
-    margin-top: 0px !important;
+    justify-content: center;
     width: 75%;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
 }
 
 .navbarDesktopTwo{
@@ -100,19 +117,22 @@ header{
   margin: auto;
   display: flex;
   justify-content: space-between;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .navbarDesktopTwo a{
-  color: white;
-  background: black;
-  border-radius: 20px;
-  border: 1px solid black;
-  padding-bottom: 10px;
+  color: black;
+  font-size: 17px !important;
+  transition: all 0.75s ease;
+}
+
+.active{
+  color: #abbf0a !important;
 }
 
 .navbarDesktopTwo a:hover{
-  color: greenyellow;
+  color: #abbf0a;
+  transition: all 0.75s ease;
 }
 
 
@@ -124,23 +144,26 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
-    border-radius: 20px;
-    padding-left: 22px;
 }
 
 .socIcons a{
     margin-right: 20px;
-    color: white;
+}
+
+.calendar{
+  transition: all 0.75s ease;
+  color:#abbf0a;
 }
 
 .calendar:hover{
-  color: greenyellow;
+  color: black !important;
+  transition: all 0.75s ease;
+  
 }
 
 .socIcons a i{
     font-size: 22px;
-    color: greenyellow;
+    color: black;
 }
 
 .fa-facebook:hover{
@@ -168,7 +191,7 @@ color: red;
     border: 0;
     background: transparent;
     outline: 0;
-    color: white;
+    color: black;
     float: left;
     line-height: 2.5rem;
     width: 0;
@@ -178,12 +201,12 @@ color: red;
   }
 
   .search__text::placeholder{
-    color: greenyellow;
+    color: black;
     font-size: 18px;
   }
   
   .search__button {
-    color: greenyellow;
+    color: #abbf0a;
     background: black;
     border-radius: 50%;
     float: right;
@@ -207,21 +230,62 @@ color: red;
     transform: scale(0.75);
   }
 
+  /* main ++++p+age+ to+u+r+s se+cti+o+n */
+  .toursOuterSection{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    padding: 20px; 
+  }
 
+  .tours{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 22px;
+  }
 
+  .tour{
+    width: 300px;
+    margin-top: 22px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    padding-bottom: 22px;
+  }
+
+  .tourImg{
+    width: 100%;
+  }
+
+  .descr{
+    padding-left: 22px;
+  }
+
+  h3{
+    font-size: 22px;
+    margin-top: 22px;
+  }
+
+  h3, .pDescription{
+    width: 80%;
+  }
+
+  .btnDetails{
+    margin-left: 0px;
+    padding:0px;
+    margin-top: 15px;
+  }
+
+  .category{
+   background-color: #abbf0a;
+   border-radius: 20px;
+   width: 80px;
+   padding-left: 10px;
+  }
 /* media queries */
 @media only screen and (min-width: 768px) {
-    .heroContent{
-    width: 100%;
-    height: calc(100vh - 60px);
-    background-image: url("img/heroImgOri.jpg");
-    background-color: black;
-    background-blend-mode: screen;
-    object-fit: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: -2;
-    }
+   
     .headerMobile{
         display: none;
     }
