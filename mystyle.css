@@ -1,11 +1,11 @@
 
 @font-face {
   font-family: bemio;
-  src: url(fonts/Bemio_0.ttf);
+  src: url(fonts/Bemio_0.otf);
 }
 @font-face {
   font-family: bemioItalic;
-  src: url(fonts/BemioItalic_0.ttf);
+  src: url(fonts/BemioItalic_0.otf);
 }
 
 * {
@@ -22,8 +22,11 @@
   body {
     margin: 0 auto;
     overflow-x: hidden; 
-    font-family: bemio;
     font-weight: normal;
+  }
+
+  h1, h2, .navbar a{
+    font-family: bemio;
   }
 
 /* .heroContent{
