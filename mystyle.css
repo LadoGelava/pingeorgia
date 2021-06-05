@@ -85,12 +85,15 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  margin-top: 15px;
 }
 
 h1 {
-  font-size: 22px;
   margin-top: 22px;
-  color: #abbf0a;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 30px;
 }
 
 .navbarDesktop {
@@ -103,7 +106,6 @@ h1 {
 }
 
 .navbarDesktopTwo {
-  margin-top: 2px !important;
   width: 100%;
   margin: auto;
   display: flex;
@@ -146,17 +148,6 @@ h1 {
 
 .socIcons a {
   margin-right: 20px;
-}
-
-.calendar {
-  transition: all 0.75s ease;
-  color: #abbf0a;
-  margin-top: 30px !important;
-}
-
-.calendar:hover {
-  color: black !important;
-  transition: all 0.75s ease;
 }
 
 .socIcons a i {
@@ -230,11 +221,14 @@ h1 {
 
 /* main ++++p+age+ to+u+r+s se+cti+o+n */
 .toursOuterSection {
-  width: 80%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px;
-  padding: 0px;
+  margin-top: 0px;
+  padding-top: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: #f3f3f3;
 }
 
 h2 {
@@ -250,7 +244,7 @@ h2 {
 }
 
 .tour {
-  width: 300px;
+  width: 250px;
   margin-top: 22px;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
   padding-bottom: 22px;
@@ -290,34 +284,31 @@ h3,
 
 /* hero container */
 .heroContent {
-  margin-top: 0px;
-  padding-left: 15px;
-  padding-right: 15px;
-  height: calc(100vh - 115px);
-  background-image: url("img/hero.jpg");
-  background-color: black;
-  background-blend-mode: screen;
-  object-fit: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+  margin-top: 15px;
+  position: relative;
+  z-index: -1;
 }
 
+.heroContent img {
+  width: 100%;
+}
+
+.widgets {
+  position: absolute;
+  top: 30px;
+  right: 25px;
+}
 /* calendar */
 .calendarDiv {
-  width: 300px;
-  margin-top: 30px;
+  width: 100% !important;
 }
 /* weather */
 .card {
   background: rgb(47, 150, 162);
   color: white;
   padding: 2em;
-  width: 100%;
-  border-radius: 10px;
   max-width: 300px;
+  z-index: 2;
 }
 
 .search {
